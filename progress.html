@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progress | Zane Doxford</title>
+  <meta name="description" content="Home labs, projects and certifications Zane Doxford is working on.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <meta property="og:title" content="Zane Doxford | Cyber Security Student">
+  <meta property="og:description" content="Cyber security student at Griffith University, Gold Coast. Projects, home labs and progress.">
+  <meta property="og:url" content="https://zanedoxford-hub.github.io/">
+  <meta name="theme-color" content="#0b1220">
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">zane<span>@</span>doxford:~$</a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">Menu</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="progress.html" class="active">Progress</a></li>
+        <li><a href="assets/Zane_Doxford_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <header class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">./progress</p>
+      <h1>Progress</h1>
+      <p class="section-sub">Home labs, projects and certifications I'm working on right now. Each one is broken into milestones so you can see exactly where it's up to.</p>
+    </div>
+  </header>
+
+  <section style="padding-top:16px">
+    <div class="wrap">
+      <div class="summary">
+        <div class="card"><div class="num" data-count="done">0</div><div class="lbl">Complete</div></div>
+        <div class="card"><div class="num" data-count="in-progress">0</div><div class="lbl">In progress</div></div>
+        <div class="card"><div class="num" data-count="planned">0</div><div class="lbl">Planned</div></div>
+      </div>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="on" data-filter="all">All</button>
+        <button data-filter="in-progress">In progress</button>
+        <button data-filter="planned">Planned</button>
+        <button data-filter="done">Complete</button>
+      </div>
+      <div class="grid two" id="progress-list"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; <span data-year></span> Zane Doxford</span>
+      <span><a href="https://github.com/zanedoxford-hub" target="_blank" rel="noopener">github.com/zanedoxford-hub</a> &middot; Hosted on <code>GitHub Pages</code></span>
+    </div>
+  </footer>
+  <script src="assets/progress-data.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
