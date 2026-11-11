@@ -34,35 +34,73 @@
     <div class="wrap">
       <p class="eyebrow">./projects</p>
       <h1>Projects</h1>
-      <p class="section-sub">Completed work from my internship and degree. Projects I'm building now are on the <a href="progress.html">Progress</a> page and move here once they're finished.</p>
+      <p class="section-sub">Completed work from my internship and my Bachelor of Cyber Security, covering offensive security, security operations, AI security, OT/ICS, cryptography and governance. Projects I'm building now are on the <a href="progress.html">Progress</a> page and move here once they're finished.</p>
     </div>
   </header>
 
   <section style="padding-top:16px">
     <div class="wrap grid two">
       <article class="card reveal">
+        <span class="status done" style="float:right">Featured</span><div class="meta">3015ICT Trustworthy AI &middot; Griffith &middot; 2026</div>
+        <h3>Prompt Injection Forensics in Large Language Models</h3>
+        <p>Researched and simulated structural prompt injection attacks (naive, delimiter escape, context ignoring and fake completion) against a RAG summarisation pipeline running Qwen2.5-0.5B-Instruct. Built a forensic localiser that uses token-level cross-entropy spikes to pinpoint the exact span of an injected payload in an execution log.</p>
+        <ul class="proj-points"><li>Attack success fell from 62.5% to 25% with a dual-stage defence (XML encapsulation plus instruction hardening)</li><li>Forensic localiser: 100% localisation accuracy, recall 1.0, F1 0.80</li><li>Identified a high false-positive rate from the static threshold and proposed tuning against domain baselines</li></ul>
+        <ul class="tags"><li>Python</li><li>PyTorch</li><li>Hugging Face</li><li>scikit-learn</li><li>OWASP LLM Top 10</li><li>Digital forensics</li></ul>
+      </article>
+      <article class="card reveal">
+        <div class="meta">3809ICT Ethical Hacking &middot; Griffith &middot; 2025</div>
+        <h3>Active Directory Penetration Test</h3>
+        <p>Full internal penetration test of a Windows Server domain controller, from anonymous enumeration to Domain Administrator, with a written report and remediation advice.</p>
+        <ul class="proj-points"><li>Enumerated the domain and users over LDAP, then AS-REP roasted accounts and cracked the hashes with John the Ripper</li><li>Mapped an ACL-abuse privilege escalation path with BloodHound and chained password resets and group membership changes with rpcclient</li><li>Dumped domain secrets with Impacket and gained Administrator access via pass-the-hash with Evil-WinRM, capturing all flags</li></ul>
+        <ul class="tags"><li>Kali Linux</li><li>LDAP</li><li>Kerberos</li><li>BloodHound</li><li>Impacket</li><li>Evil-WinRM</li></ul>
+      </article>
+      <article class="card reveal">
+        <div class="meta">3014ICT Cyber Defence &amp; Incident Response &middot; Griffith &middot; 2025</div>
+        <h3>SOC Investigation &amp; Threat Intelligence in Splunk</h3>
+        <p>Security assessment for a simulated food-delivery company (Hungry Hustle) covering security operations analysis, metrics and visualisation, and a threat intelligence case tracing a malicious file to its sender.</p>
+        <ul class="proj-points"><li>Wrote SPL queries to find the top sources of unauthorised (HTTP 403) access attempts and geolocate them with iplocation</li><li>Built dashboards and metrics for management reporting</li><li>Investigated a compromised workstation end to end: identified the host, the suspicious file, the sender and attribution</li></ul>
+        <ul class="tags"><li>Splunk</li><li>SPL</li><li>Threat intelligence</li><li>Incident response</li><li>Dashboards</li></ul>
+      </article>
+      <article class="card reveal">
+        <div class="meta">3010ICT OT Security &middot; Griffith &middot; 2025</div>
+        <h3>OT / ICS Security Assessment: Water Utility</h3>
+        <p>Security assessment of a simulated water utility (Clean Water Corporation): OT network design, asset inventory, penetration test findings and standards compliance for critical infrastructure.</p>
+        <ul class="proj-points"><li>Inventoried SCADA, PLC, RTU, HMI and sensor assets and rated each by risk</li><li>Reported 11 vulnerabilities with risk rankings and mitigations, from insecure ICS protocols to excessive privileges and weak remote access</li><li>Checked compliance against IEC 62443 and the Australian Energy Sector Cyber Security Framework (AESCSF)</li></ul>
+        <ul class="tags"><li>SCADA / ICS</li><li>IEC 62443</li><li>AESCSF</li><li>Splunk threat hunting</li><li>Risk assessment</li></ul>
+      </article>
+      <article class="card reveal">
+        <div class="meta">3012ICT Cryptography &middot; Griffith &middot; 2026</div>
+        <h3>Cryptanalysis &amp; Python Crypto Toolkit</h3>
+        <p>Broke classical ciphers and analysed modern ones, then built a Python toolkit that computes and explains the maths behind common cryptographic primitives.</p>
+        <ul class="proj-points"><li>Identified and broke a Vigen&egrave;re cipher using Kasiski examination and Index of Coincidence, and a substitution cipher using trigram frequency analysis</li><li>Demonstrated why ECB mode leaks patterns and CBC does not by encrypting an image with OpenSSL; simulated an LFSR stream cipher; worked AES and RSA problems</li><li>Toolkit covers extended GCD, modular inverse, square-and-multiply, RSA, Diffie-Hellman, ElGamal, elliptic-curve point maths and PKCS#7 padding</li></ul>
+        <ul class="tags"><li>Python</li><li>OpenSSL</li><li>AES</li><li>RSA</li><li>Diffie-Hellman</li><li>ECC</li></ul>
+      </article>
+      <article class="card reveal">
+        <div class="meta">2007ICT Cyber Security Standards &amp; Operations &middot; Griffith &middot; 2025</div>
+        <h3>Enterprise Data Protection Strategy</h3>
+        <p>Designed a data protection strategy for a global SaaS company (CloudConnect Systems, 2 million business customers across 47 countries) with inconsistent encryption and manual key handling.</p>
+        <ul class="proj-points"><li>Specified AES-256-GCM at rest, TLS 1.3 with forward secrecy in transit, and RSA-4096 / ECC P-384 for key wrapping and signatures</li><li>Designed an automated key management lifecycle: HSM generation (FIPS 140-3), 90-day rotation, NIST SP 800-88 destruction and SIEM audit logging</li><li>Aligned controls to ISO 27001 / 27002 and NIST frameworks</li></ul>
+        <ul class="tags"><li>ISO 27001</li><li>NIST</li><li>Encryption</li><li>Key management</li><li>GRC</li></ul>
+      </article>
+      <article class="card reveal">
+        <div class="meta">3014ICT Cyber Defence &amp; Incident Response &middot; Griffith &middot; 2025</div>
+        <h3>Secure Network Services &amp; Endpoint Protection Lab</h3>
+        <p>Built and hardened core network services in a Linux lab, then added endpoint protection with automated detection.</p>
+        <ul class="proj-points"><li>Configured Apache with SSL/TLS, a Squid forward proxy and a BIND9 DNS server with forward and reverse zones and firewall rules</li><li>Deployed ClamAV on Ubuntu and wrote a Bash script using inotify to scan files automatically as they change</li><li>Validated detection with the EICAR test file</li></ul>
+        <ul class="tags"><li>Linux</li><li>Apache</li><li>TLS</li><li>Squid</li><li>BIND9</li><li>ClamAV</li><li>Bash</li></ul>
+      </article>
+      <article class="card reveal">
+        <div class="meta">3225AFE Financial Crime &middot; Griffith &middot; 2025</div>
+        <h3>AML/CTF Compliance Assessment: Online Betting</h3>
+        <p>Compliance review of a simulated online betting operator against the Anti-Money Laundering and Counter-Terrorism Financing Act 2006.</p>
+        <ul class="proj-points"><li>Mapped obligations: AUSTRAC enrolment, customer due diligence, sanctions and PEP screening, record keeping</li><li>Expanded reporting from threshold transaction reports to suspicious matter reports with example red flags</li><li>Built a financial crime risk matrix with likelihood, impact and mitigations</li></ul>
+        <ul class="tags"><li>AML/CTF Act</li><li>AUSTRAC</li><li>Risk assessment</li><li>Compliance</li></ul>
+      </article>
+      <article class="card reveal">
         <div class="meta">Internship &middot; City University of Macau &middot; 2025 &ndash; 2026</div>
         <h3>CAPTCHA Robustness Research</h3>
-        <p>Researched and prototyped a Python system to test how well CAPTCHA challenges resist automated solving, using web scraping libraries and API integrations. The work looked at where bot-detection controls are weakest and what makes them harder to automate.</p>
+        <p>Researched and prototyped a Python system to test how well CAPTCHA challenges resist automated solving, using web scraping libraries and API integrations.</p>
         <ul class="tags"><li>Python</li><li>Web scraping</li><li>APIs</li><li>Bot detection</li></ul>
-      </article>
-      <article class="card reveal">
-        <div class="meta">Griffith University &middot; Coursework</div>
-        <h3>Network Analysis &amp; Scanning Labs</h3>
-        <p>Captured and analysed network traffic in Wireshark, and scanned and enumerated lab hosts with Nmap to identify services and potential weaknesses.</p>
-        <ul class="tags"><li>Wireshark</li><li>Nmap</li><li>TCP/IP</li></ul>
-      </article>
-      <article class="card reveal">
-        <div class="meta">Griffith University &middot; Coursework</div>
-        <h3>Web Application &amp; Exploitation Labs</h3>
-        <p>Tested web applications for vulnerabilities with Burp Suite and exploited deliberately vulnerable lab targets with Metasploit in Kali Linux.</p>
-        <ul class="tags"><li>Burp Suite</li><li>Metasploit</li><li>Kali Linux</li></ul>
-      </article>
-      <article class="card reveal">
-        <div class="meta">Griffith University &middot; Coursework</div>
-        <h3>Log Analysis with Splunk</h3>
-        <p>Searched and analysed security logs in Splunk to find suspicious activity and practise the investigation steps used in a security operations centre.</p>
-        <ul class="tags"><li>Splunk</li><li>SPL</li><li>Log analysis</li></ul>
       </article>
     </div>
   </section>

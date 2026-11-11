@@ -91,18 +91,32 @@ const PROGRESS = [
     ]
   },
   {
-    title: "AI / LLM Security: Securing a Helpdesk Chatbot",
+    title: "Publish: Prompt Injection Forensics Code & Write-up",
     category: "AI Security",
-    status: "planned",
-    summary: "Build a small local AI helpdesk assistant, test it against the OWASP Top 10 for LLM Applications (prompt injection, data leakage, unsafe output), then add layered defences and measure the difference.",
-    tags: ["OWASP LLM Top 10", "Prompt Injection", "Python", "Ollama"],
+    status: "in-progress",
+    summary: "My Trustworthy AI research is finished. Next step: publish a cleaned-up notebook and a public write-up on GitHub so employers can see the code and charts, not just the summary.",
+    tags: ["Python", "PyTorch", "Hugging Face", "OWASP LLM Top 10"],
     link: "",
     milestones: [
-      { text: "Study the OWASP Top 10 for LLM Applications", done: false },
-      { text: "Build a local chatbot with a fake secret and one tool", done: false },
-      { text: "Test direct and indirect prompt injection and output handling", done: false },
-      { text: "Add defences and re-test", done: false },
-      { text: "Publish findings mapped to OWASP LLM Top 10", done: false }
+      { text: "Research report and experiment completed (3015ICT)", done: true },
+      { text: "Attack simulation and forensic localiser built and evaluated", done: true },
+      { text: "Clean up the notebook and remove course-specific material", done: false },
+      { text: "Publish a GitHub repo with README, charts and results table", done: false },
+      { text: "Add a defence-in-depth section mapped to OWASP LLM Top 10", done: false }
+    ]
+  },
+  {
+    title: "Publish: Python Crypto Toolkit",
+    category: "Cryptography",
+    status: "planned",
+    summary: "Turn my cryptography course toolkit into a documented, tested Python package that explains each step of RSA, Diffie-Hellman, ElGamal and ECC calculations.",
+    tags: ["Python", "Cryptography", "pytest"],
+    link: "",
+    milestones: [
+      { text: "Toolkit functions written (3012ICT)", done: true },
+      { text: "Split into modules and add docstrings and a CLI", done: false },
+      { text: "Add pytest unit tests with coverage report", done: false },
+      { text: "Publish on GitHub with usage examples", done: false }
     ]
   },
   {

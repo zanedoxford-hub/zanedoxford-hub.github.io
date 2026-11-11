@@ -174,3 +174,6 @@ footer code { font-family: var(--mono); color: var(--accent); }
   .nav ul.open { display: flex; }
   .hero { padding: 64px 0 48px; }
 }
+
+.proj-points { margin: 0 0 4px; padding-left: 18px; color: var(--muted); font-size: .92rem; }
+.proj-points li { margin-bottom: 4px; }
