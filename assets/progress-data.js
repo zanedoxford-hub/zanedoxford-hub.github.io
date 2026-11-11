@@ -94,29 +94,29 @@ const PROGRESS = [
     title: "Publish: Prompt Injection Forensics Code & Write-up",
     category: "AI Security",
     status: "in-progress",
-    summary: "My Trustworthy AI research is finished. Next step: publish a cleaned-up notebook and a public write-up on GitHub so employers can see the code and charts, not just the summary.",
+    summary: "My Trustworthy AI research is finished. The public write-up with results and charts is now on GitHub. Next: add the cleaned-up experiment notebook.",
     tags: ["Python", "PyTorch", "Hugging Face", "OWASP LLM Top 10"],
-    link: "",
+    link: "https://github.com/zanedoxford-hub/prompt-injection-forensics",
     milestones: [
       { text: "Research report and experiment completed (3015ICT)", done: true },
       { text: "Attack simulation and forensic localiser built and evaluated", done: true },
       { text: "Clean up the notebook and remove course-specific material", done: false },
-      { text: "Publish a GitHub repo with README, charts and results table", done: false },
+      { text: "Publish a GitHub repo with README, charts and results table", done: true },
       { text: "Add a defence-in-depth section mapped to OWASP LLM Top 10", done: false }
     ]
   },
   {
     title: "Publish: Python Crypto Toolkit",
     category: "Cryptography",
-    status: "planned",
+    status: "done",
     summary: "Turn my cryptography course toolkit into a documented, tested Python package that explains each step of RSA, Diffie-Hellman, ElGamal and ECC calculations.",
     tags: ["Python", "Cryptography", "pytest"],
-    link: "",
+    link: "https://github.com/zanedoxford-hub/crypto-toolkit",
     milestones: [
       { text: "Toolkit functions written (3012ICT)", done: true },
-      { text: "Split into modules and add docstrings and a CLI", done: false },
-      { text: "Add pytest unit tests with coverage report", done: false },
-      { text: "Publish on GitHub with usage examples", done: false }
+      { text: "Split into modules with docstrings and worked examples", done: true },
+      { text: "Add pytest unit tests (10 passing)", done: true },
+      { text: "Publish on GitHub with README and usage examples", done: true }
     ]
   },
   {
